@@ -30,7 +30,6 @@ export function NotFoundPage() {
 }
 
 const Wrapper = styled.div`
-  height: calc(100vh - ${StyleConstants.NAV_BAR_HEIGHT});
   display: flex;
   align-items: center;
   justify-content: center;

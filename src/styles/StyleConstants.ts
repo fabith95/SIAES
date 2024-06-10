@@ -1,3 +1,36 @@
 export const enum StyleConstants {
-  NAV_BAR_HEIGHT = '4rem',
+  //General
+
+  //NAV_BAR_HEIGHT = '4rem',
+  PRIMARY_COLOR_RED = '#df1833',
+  SECUNDARY_COLOR_BLUE = '#0F2533',
+  TERTIARY_COLOR_WHITE = '#f5f5f5',
+  FOURT_COLOR_TEXT = '#918b91',
+
+  // Typography
+
+  PRYMARY_COLOR_TYPOGRAPHY_TITLES_GRAY = '#918B91',
+  PRYMARY_COLOR_TYPOGRAPHY_PARAGRAPHS_GRAY = '#6C6C6C',
+  PRYMARY_COLOR_TYPOGRAPHY_SELECTED_BLUE = '#4C96FF',
+
+  FONT_SIZE_GENERAL = '0.775rem',
+
+  // Space
+
+  MARGIN_SPACE_LEFT = '2.875rem',
+  MARGIN_SPACE_RIGHT = '1.875rem',
+
+  //Header & Fotter
+
+  HEADER_HEIGHT = '10vh',
+  FOOTER_HEIGHT = '6vh',
+  PAGES_HEIGHT = '84vh',
+
+  // Lines borders
+
+  LINE_BORDER = '1px solid #DBDBDB',
+
+  // Bottoms
+
+  PRYMARY_COLOR_BOTTOM = '#F0F5FF',
 }

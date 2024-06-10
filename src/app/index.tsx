@@ -12,9 +12,11 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import { GlobalStyle } from 'styles/global-styles';
 
-import { HomePage } from './pages/HomePage/Loadable';
 import { NotFoundPage } from './pages/NotFoundPage/Loadable';
 import { useTranslation } from 'react-i18next';
+import { Header } from './features/Header';
+import { Footer } from './features/Footer';
+import { UsuariosPage } from './pages/UsuariosPage';
 
 export function App() {
   const { i18n } = useTranslation();
@@ -27,11 +29,14 @@ export function App() {
       >
         <meta name="description" content="A React Boilerplate application" />
       </Helmet>
+      <Header />
 
       <Routes>
-        <Route path="/" element={<HomePage />} />
+        <Route path="/" element={<UsuariosPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
+
+      <Footer />
       <GlobalStyle />
     </BrowserRouter>
   );
