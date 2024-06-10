@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 import { StyleConstants } from './StyleConstants';
-/* istanbul ignore next */
+
 export const GlobalStyle = createGlobalStyle`
   html,
   body {
@@ -31,5 +31,10 @@ export const GlobalStyle = createGlobalStyle`
   .icon {
     width: 1.5rem;
     height: 1.5rem;
+  }
+
+  .img {
+    max-width: 100%; /* Asegura que la imagen no exceda el ancho de su contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
   }
 `;

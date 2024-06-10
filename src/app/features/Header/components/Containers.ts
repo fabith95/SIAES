@@ -36,7 +36,7 @@ export const SectionRightUp = styled.div`
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  margin-right: 75%;
+  margin-right: 70%;
 `;
 
 export const SectionRightDown = styled.div`

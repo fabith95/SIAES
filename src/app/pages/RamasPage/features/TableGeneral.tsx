@@ -7,7 +7,6 @@ const columns = [
     title: 'Name',
     dataIndex: 'name',
     key: 'name',
-    render: text => <a>{text}</a>,
   },
   {
     title: 'Age',
@@ -103,7 +102,7 @@ const data = [
   },
 ];
 
-const TableUsuarios = () => (
+const TableGeneral = () => (
   <div style={{ marginTop: '0%' }}>
     <Table
       columns={columns}
@@ -114,4 +113,4 @@ const TableUsuarios = () => (
   </div>
 );
 
-export default TableUsuarios;
+export default TableGeneral;

@@ -28,7 +28,7 @@ const ModalFormsBottom = () => {
 
   const customTitle = (
     <div style={{ fontSize: '1.5rem', color: '#918b91', fontWeight: 'bold', marginBottom: '40px' }}>
-      NUEVO USUARIO
+      NUEVA RAMA
     </div>
   );
 
@@ -54,7 +54,7 @@ const ModalFormsBottom = () => {
           background: '#F0F5FF',
         }}
       >
-        CREAR USUARIO
+        CREAR RAMA
       </Button>
 
       <ConfigProvider

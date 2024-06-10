@@ -17,6 +17,8 @@ import { useTranslation } from 'react-i18next';
 import { Header } from './features/Header';
 import { Footer } from './features/Footer';
 import { UsuariosPage } from './pages/UsuariosPage';
+import { RamasPage } from './pages/RamasPage';
+import BackgroundImg from './features/BackgroundImg';
 
 export function App() {
   const { i18n } = useTranslation();
@@ -30,9 +32,10 @@ export function App() {
         <meta name="description" content="A React Boilerplate application" />
       </Helmet>
       <Header />
-
+      <BackgroundImg />
       <Routes>
-        <Route path="/" element={<UsuariosPage />} />
+        <Route path="/UsuariosPage" element={<UsuariosPage />} />
+        <Route path="/RamasPage" element={<RamasPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
 

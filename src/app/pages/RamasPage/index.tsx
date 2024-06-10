@@ -2,16 +2,16 @@ import { ConfigProvider, Divider } from 'antd';
 import {
   ContainerGeneral,
   ContainerModalBottom,
-  ContainerUsuarios,
+  ContainerRamas,
 } from './components/Containers';
-import TableUsuarios from './features/TableGeneral';
 import ModalForms from './features/ModalFormsBottom';
 import ModalFormsBottom from './features/ModalFormsBottom';
+import TableGeneral from './features/TableGeneral';
 
-export function UsuariosPage() {
+export function RamasPage() {
   return (
     <ContainerGeneral>
-      <ContainerUsuarios>
+      <ContainerRamas>
         <div
           style={{
             color: '#0F2533',
@@ -21,14 +21,14 @@ export function UsuariosPage() {
             marginBottom: '30px',
           }}
         >
-          USUARIOS
+          RAMAS
         </div>
         <ContainerModalBottom>
           <ModalFormsBottom />
         </ContainerModalBottom>
         <Divider style={{ border: 'solid 1px #cccccc', marginTop: '1%' }} />
-        <TableUsuarios />
-      </ContainerUsuarios>
+        <TableGeneral />
+      </ContainerRamas>
     </ContainerGeneral>
   );
 }

@@ -24,7 +24,7 @@ export function Header() {
               fontWeight: 'bold',
             }}
           >
-            Sistema Integral Aprendizaje Educacion Scouts
+            Sistema Integral De Avance & Educación Scouts
           </div>
         </SectionRightUp>
         <SectionRightDown>

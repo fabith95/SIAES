@@ -5,6 +5,7 @@ import {
   SettingOutlined,
 } from '@ant-design/icons';
 import { ConfigProvider, Menu } from 'antd';
+import { useNavigate } from 'react-router-dom';
 const items = [
   {
     label: 'ROLES',
@@ -19,14 +20,22 @@ const items = [
   {
     label: 'RAMAS',
     key: 'ramas',
-    disabled: true,
+    disabled: false,
   },
 ];
 const OptionsPage = () => {
-  const [current, setCurrent] = useState('mail');
+  const [current, setCurrent] = useState('usuarios');
+  const navigate = useNavigate();
+
   const onClick = e => {
     console.log('click ', e);
     setCurrent(e.key);
+
+    if (e.key === 'usuarios') {
+      navigate('/UsuariosPage');
+    } else if (e.key === 'ramas') {
+      navigate('/RamasPAge');
+    }
   };
   return (
     <ConfigProvider
